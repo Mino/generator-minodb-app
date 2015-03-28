@@ -1,0 +1,41 @@
+{
+  "name": "<%=project_name%>",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "errorhandler": "*",
+    "jade": "1.1.5",
+    "request": "*",
+    "connect": "2.x",
+    "tracer": "*",
+    "body-parser": "*",
+    "minodb": "Mino/MinoDB#develop",
+
+    <%if (include_minoval) {%>
+    "minoval": "Mino/MinoVal#master",
+    <%}%>
+
+    <%if (include_minocms) {%>
+    "minocms": "Mino/MinoCMS#master",
+    <%}%>
+
+    "extend": "MarcusLongmuir/extend",
+    "mustache-express": "*",
+    "bower": "*"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.1",
+    "gulp-nodemon" : "2.0.2",
+    "gulp-util": "^2.2.14",
+    "gulp-imports" : "MarcusLongmuir/gulp-imports",
+    "gulp-less": "^1.2.3",
+    "gulp-concat": "^2.2.0",
+    "gulp-watch": "^0.6.2",
+    "gulp-plumber": "^0.6.1",
+    "gulp-mocha": "*"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}

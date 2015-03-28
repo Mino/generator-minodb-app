@@ -1,0 +1,14 @@
+{
+  "name": "<%=project_name%>",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "1.11.1",
+    <%if (include_safe) {%>
+    "safe": "*",
+    <%}%>
+    "fieldval": "FieldVal/fieldval-js#develop",
+    "fieldval-ui": "FieldVal/fieldval-ui#develop",
+    "fieldval-rules": "FieldVal/fieldval-rules-js#develop"
+  },
+  "private": true
+}

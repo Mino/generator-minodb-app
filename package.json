@@ -1,0 +1,15 @@
+{
+  "name": "generator-minodb-app",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "*",
+    "fieldval": "FieldVal/fieldval-js#develop",
+    "tracer": "*"
+  }
+}

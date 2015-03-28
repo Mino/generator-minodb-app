@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="frontend.js"></script>
+
+		<%if (include_minoval) {%>
+		<script src="/mino/minoval/minoval.js"></script>
+		<%}%>
+
+		<%if (include_minocms) {%>
+		<script src="/mino/cms/minocms.js"></script>
+		<%}%>
+	</head>
+<body>
+
+	<%if (include_safe) {%>
+	<noscript>
+	This site requires Javascript
+	</noscript>
+	<%} else {%>
+		<p><%=project_name%></p>
+	<%}%>
+	
+</body>
+</html>
