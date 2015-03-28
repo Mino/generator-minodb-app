@@ -36,7 +36,7 @@ module.exports = function(callback){
 		<%if (include_minoauth) {%>
 		globals.auth = new MinoAuth({
 			name: "my_app_auth",
-			display_name: "My app auth",
+			display_name: "My Auth",
 			user_path: "/" + globals.username + "/users/",
 			session_path: "/" + globals.username + "/sessions/",
 			cookie_name: "my_app_token",
@@ -48,7 +48,8 @@ module.exports = function(callback){
 		<%if (include_minoperms) {%>
 		globals.permissions = new MinoDBPermissions({
 			path: "/" + globals.username + "/minodb_permissions/",
-			name: "custom_permissions",
+			name: "my_permissions",
+			display_name: "My Permissions",
 			username: globals.username
 		})
 		globals.minodb.add_plugin(globals.permissions);
